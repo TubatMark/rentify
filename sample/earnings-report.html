@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-[#f8fafc] group/design-root overflow-x-hidden font-sans"
+        style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(97,111,137)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e2e8f0] bg-white px-10 py-3 sticky top-0 z-50">
+                <div class="flex items-center gap-4 text-[#111318]">
+                    <div class="size-4">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-[#111318] text-lg font-bold leading-tight tracking-[-0.015em]">Rentify</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-[#64748b] hover:text-[#111318] text-sm font-medium leading-normal transition-colors"
+                            href="#">List your car</a>
+                        <a class="text-[#64748b] hover:text-[#111318] text-sm font-medium leading-normal transition-colors"
+                            href="#">Trips</a>
+                        <a class="text-[#64748b] hover:text-[#111318] text-sm font-medium leading-normal transition-colors"
+                            href="#">Inbox</a>
+                        <a class="text-[#111318] text-sm font-medium leading-normal" href="#">Earnings &amp; reports</a>
+                    </div>
+                    <button
+                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f1f5f9] hover:bg-[#e2e8f0] text-[#111318] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors">
+                        <div class="text-[#111318]" data-icon="Globe" data-size="20px" data-weight="regular">
+                            <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ring-2 ring-white shadow-sm"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtsrfQQLBkR-zxxWrytL4lbh6vVczfvjUtRfmXzQzhNpZEQqRMbDSDcPAJlowrIM8m7qElW5xZM_yMiwZyrc9JR267dXklj6EwuOD622o-HCk-xyp5806aJOX92Zt5tEpSq4vUwzaJwOzy5B3Rj75r4OzTEqJQ1K79VOexDaHtVrQw0RjGMDmQ_GiZaRzO0ULfOKr12nUCtNpwCFvMd9VfCM06vaCKRXB3pQ0pNpygO_O-tjk8rs3jwZJonbrQ40GX9jMGTNdIsWk");'>
+                    </div>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-8 px-4 sm:px-8">
+                <div class="layout-content-container flex flex-col max-w-[1024px] w-full gap-8">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-[#0f172a] text-4xl font-extrabold leading-tight tracking-tight">Earnings
+                                &amp; Reports</h1>
+                            <p class="text-[#64748b] text-base font-normal">Track financial performance and visualize
+                                your revenue streams.</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <label class="relative block">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
+                                    <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+                                </span>
+                                <select
+                                    class="form-input w-full min-w-[200px] cursor-pointer rounded-lg border-none bg-white py-3 pl-10 pr-10 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none">
+                                    <option value="this_month">This Month</option>
+                                    <option value="last_month">Last Month</option>
+                                    <option value="this_year">This Year</option>
+                                </select>
+                                <span
+                                    class="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-500 pointer-events-none">
+                                    <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-white rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-slate-100 relative overflow-hidden flex flex-col justify-between min-h-[160px]">
+                            <div class="absolute right-0 top-0 p-4 opacity-10">
+                                <span class="material-symbols-outlined text-8xl text-emerald-600">payments</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="p-1.5 bg-emerald-50 rounded-lg text-emerald-600">
+                                        <span
+                                            class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+                                    </div>
+                                    <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Total
+                                        Earnings</span>
+                                </div>
+                                <p class="text-[#0f172a] text-5xl font-extrabold leading-tight tracking-tighter mt-2">
+                                    ₱12,500</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-1 mt-4 text-emerald-600 text-sm font-bold bg-emerald-50 w-fit px-2 py-1 rounded-md">
+                                <span class="material-symbols-outlined text-[16px]">trending_up</span>
+                                <span>+12.5%</span>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Total
+                                        Trips</span>
+                                    <p class="text-[#0f172a] text-3xl font-bold">12</p>
+                                </div>
+                                <div class="p-3 bg-blue-50 rounded-xl text-blue-600">
+                                    <span class="material-symbols-outlined text-[24px]">directions_car</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-slate-400 text-xs">Based on completed trips</div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Avg.
+                                        Trip Price</span>
+                                    <p class="text-[#0f172a] text-3xl font-bold">₱1,041</p>
+                                </div>
+                                <div class="p-3 bg-purple-50 rounded-xl text-purple-600">
+                                    <span class="material-symbols-outlined text-[24px]">price_change</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-slate-400 text-xs">Per completed booking</div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-slate-100">
+                        <h3 class="text-[#0f172a] text-xl font-bold leading-tight mb-8">Revenue Breakdown</h3>
+                        <div class="flex flex-col lg:flex-row gap-12 items-center lg:items-start">
+                            <div class="flex-shrink-0 relative group cursor-default">
+                                <div class="w-64 h-64 rounded-full"
+                                    style="background: conic-gradient(#3b82f6 0deg 144deg, #8b5cf6 144deg 273.6deg, #10b981 273.6deg 360deg);">
+                                </div>
+                                <div
+                                    class="absolute inset-8 bg-white rounded-full flex flex-col items-center justify-center shadow-inner">
+                                    <span class="text-slate-400 text-sm font-medium">Total</span>
+                                    <span class="text-slate-800 text-2xl font-bold">100%</span>
+                                </div>
+                            </div>
+                            <div class="flex-1 w-full flex flex-col justify-center gap-6">
+                                <div class="group">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <div class="flex items-center gap-3">
+                                            <div class="bg-blue-100 p-2 rounded-lg">
+                                                <span
+                                                    class="material-symbols-outlined text-blue-500 text-[20px]">directions_car</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-slate-900 font-bold text-base">Toyota Vios</p>
+                                                <p class="text-slate-400 text-xs font-medium">5 Trips</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-slate-900 font-bold text-lg">₱5,000</p>
+                                            <p class="text-blue-500 text-xs font-bold">40%</p>
+                                        </div>
+                                    </div>
+                                    <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden">
+                                        <div
+                                            class="h-full bg-blue-500 rounded-full w-[40%] transition-all duration-500 ease-out">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <div class="flex items-center gap-3">
+                                            <div class="bg-purple-100 p-2 rounded-lg">
+                                                <span
+                                                    class="material-symbols-outlined text-purple-500 text-[20px]">sports_motorsports</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-slate-900 font-bold text-base">Honda Civic</p>
+                                                <p class="text-slate-400 text-xs font-medium">4 Trips</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-slate-900 font-bold text-lg">₱4,500</p>
+                                            <p class="text-purple-500 text-xs font-bold">36%</p>
+                                        </div>
+                                    </div>
+                                    <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden">
+                                        <div
+                                            class="h-full bg-purple-500 rounded-full w-[36%] transition-all duration-500 ease-out">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <div class="flex items-center gap-3">
+                                            <div class="bg-emerald-100 p-2 rounded-lg">
+                                                <span
+                                                    class="material-symbols-outlined text-emerald-500 text-[20px]">airport_shuttle</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-slate-900 font-bold text-base">Mitsubishi Mirage</p>
+                                                <p class="text-slate-400 text-xs font-medium">3 Trips</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-slate-900 font-bold text-lg">₱3,000</p>
+                                            <p class="text-emerald-500 text-xs font-bold">24%</p>
+                                        </div>
+                                    </div>
+                                    <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden">
+                                        <div
+                                            class="h-full bg-emerald-500 rounded-full w-[24%] transition-all duration-500 ease-out">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mt-2">
+                        <button
+                            class="group flex items-center justify-center gap-2 rounded-xl h-12 px-6 bg-white border border-slate-200 text-slate-700 text-sm font-bold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all focus:ring-2 focus:ring-slate-200">
+                            <span
+                                class="material-symbols-outlined text-red-500 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                            <span>Export as PDF</span>
+                        </button>
+                        <button
+                            class="group flex items-center justify-center gap-2 rounded-xl h-12 px-6 bg-white border border-slate-200 text-slate-700 text-sm font-bold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all focus:ring-2 focus:ring-slate-200">
+                            <span
+                                class="material-symbols-outlined text-green-600 group-hover:scale-110 transition-transform">table_view</span>
+                            <span>Export as CSV</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

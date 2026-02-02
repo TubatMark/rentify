@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rentify - Monetize Your Fleet</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-dark": "#0d3fa3",
+                        "accent": "#f97316", /* Soft orange accent */
+                        "background-light": "#ffffff",
+                        "background-off-white": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "text-main": "#111318",
+                        "text-muted": "#616f89",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light text-text-main antialiased selection:bg-primary/20 selection:text-primary">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-[#f0f2f4] bg-white/90 backdrop-blur-md">
+            <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+                        <span class="material-symbols-outlined text-xl">directions_car</span>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight text-text-main">Rentify</h2>
+                </div>
+                <nav class="hidden md:flex flex-1 justify-center gap-8">
+                    <a class="text-sm font-medium text-text-main hover:text-primary transition-colors" href="#">For
+                        Owners</a>
+                    <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">For
+                        Renters</a>
+                    <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors"
+                        href="#">Enterprise</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="text-sm font-medium text-text-main hover:text-primary hidden sm:block" href="#">Login</a>
+                    <button
+                        class="flex items-center justify-center rounded-lg bg-primary px-5 py-2 text-sm font-bold text-white transition-all hover:bg-primary-dark focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="relative w-full overflow-hidden bg-background-off-white py-12 lg:py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col-reverse gap-10 lg:flex-row lg:items-center">
+                    <!-- Content -->
+                    <div class="flex flex-1 flex-col gap-6 text-left lg:max-w-xl">
+                        <div
+                            class="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
+                            <span class="flex h-2 w-2 rounded-full bg-accent"></span>
+                            New: Instant Payouts Available
+                        </div>
+                        <h1
+                            class="text-4xl font-black leading-[1.1] tracking-tight text-text-main sm:text-5xl lg:text-6xl">
+                            Monetize Your Fleet with <span class="text-primary">Rentify</span>
+                        </h1>
+                        <p class="text-lg font-normal leading-relaxed text-text-muted">
+                            Turn your idle vehicles into income generators with the Philippines' most trusted rental
+                            platform. Simple, secure, and profitable.
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <button
+                                class="flex items-center justify-center rounded-lg bg-primary h-12 px-6 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:-translate-y-0.5">
+                                Get Started
+                            </button>
+                            <button
+                                class="flex items-center justify-center rounded-lg bg-white border border-[#dbdfe6] h-12 px-6 text-base font-bold text-text-main transition-all hover:bg-gray-50 hover:border-gray-300">
+                                Learn More
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-4 pt-4 text-sm text-text-muted">
+                            <div class="flex -space-x-2">
+                                <div class="h-8 w-8 rounded-full border-2 border-white bg-gray-200 bg-cover"
+                                    data-alt="Portrait of a smiling user"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAehq8YFQJvKvdkS1vXOJHdtQ5hYzopCG2s6zVx5uzwpnhH6mFbx2BZYR3BV5Vmw08aducFpuRPJ2OOqkcr0E62QvavreZTCyDaYK8cm81sTYJtPUSISRN3bTA0g90zqzN1RYlO93aLENvaz8biOkxWer9trQk8YxUD-zYC0EQssCv68eff4ojuwR23R80omCUjIilom6YuWu3177yW_5z8BiGglKfDWDaoNYc7B7UdoB053raV34RWM0SHLs_-0WaeYePeQGJI-G4')">
+                                </div>
+                                <div class="h-8 w-8 rounded-full border-2 border-white bg-gray-200 bg-cover"
+                                    data-alt="Portrait of a male user"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1MwRpMcXe2dYmmJaOIa6GJ0E1ypluAbevQMVPXw89yci7tAHq9FDAALT-EXMjbeUkPTA7RTuQFDfzt3ozON_G0tExZS7jsWiZsZV8gTmW7o-nTn4JLDfSGEbITLVZDgTEZdHfhhnTNwDaLKhpZNDOGT-GgRPwsbO9ZRrd2hnY8bOFWjegBQliqGEXQhbZx-C084v927SmV2-RmmRGmO9OdwWbdCHv8GTa3QMqKLQNDDkUazU-p_1nnJ7LxK39DpVM2V3RlXsbV6A')">
+                                </div>
+                                <div class="h-8 w-8 rounded-full border-2 border-white bg-gray-200 bg-cover"
+                                    data-alt="Portrait of a female user"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD68VMJtIUTCEI3AhEb2RGAhQBwIio-4Ul4kO8EfZBrdaJ3r-0tdZX5OxU2AapnloVPbq4leJnGvCaWGZVxVFDS5049sj2xaF3gW3pXPMLGGuIevwgSns8qWZKCrM1guexp1YndZpXeKKxcAH0-wAX53-n0m1Nnknt-ZxVvxTeub8y8RAqXO2etTfCqtIcXmjult-MWcxD7_49u7BkQbL7hdGts6AyHMJdkgZAYSkB0fXJzoBibrow7GPZ4EcprKdXZmaddsDXbtmY')">
+                                </div>
+                            </div>
+                            <span>Joined by 500+ owners this month</span>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="flex flex-1 items-center justify-center">
+                        <div
+                            class="relative w-full aspect-[4/3] lg:aspect-square max-w-[600px] overflow-hidden rounded-2xl bg-gray-100 shadow-2xl">
+                            <div class="absolute inset-0 bg-cover bg-center"
+                                data-alt="A modern electric car parked next to a sleek motorcycle in a clean garage"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAxmYGTd7ZKdFfGD1W13OyRVI6Y5PMW6H7Ef9GCMD3EvHol2boSYpevC7DXVR21vaPB4kCcjkFhvfLey__spXzqU897Ah_cvr-yD0FtAbPs4UtRJ9dB6Hzcjw6te-YL6mvBYNdmYlhYouQFLbrwerbtpefs5eVRQusaKcD2nuoc9MrRJaX2YkUpRkrj6nYg_Yzz8zpOgmKfWYk69piYs8hAToTPGCbNR-paYCNH4Yxid2EUmEFFwsszpIo3ZXaxkqevu0MKhAG0Gk');">
+                            </div>
+                            <!-- Gradient Overlay for text protection if needed, though separate here -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="border-y border-[#f0f2f4] bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                    <div
+                        class="flex flex-col items-center justify-center gap-1 rounded-xl bg-background-off-white p-6 text-center transition-transform hover:scale-[1.02]">
+                        <p class="text-sm font-medium text-text-muted uppercase tracking-wider">Active Owners</p>
+                        <p class="text-3xl font-black text-text-main sm:text-4xl">500+</p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center gap-1 rounded-xl bg-background-off-white p-6 text-center transition-transform hover:scale-[1.02]">
+                        <p class="text-sm font-medium text-text-muted uppercase tracking-wider">Total Payouts</p>
+                        <p class="text-3xl font-black text-primary sm:text-4xl">₱10M+</p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center gap-1 rounded-xl bg-background-off-white p-6 text-center transition-transform hover:scale-[1.02]">
+                        <p class="text-sm font-medium text-text-muted uppercase tracking-wider">Cities Covered</p>
+                        <p class="text-3xl font-black text-text-main sm:text-4xl">20+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Section -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col gap-4 text-center mb-16">
+                    <h2 class="text-3xl font-black tracking-tight text-text-main sm:text-4xl">
+                        Why Choose Rentify?
+                    </h2>
+                    <p class="mx-auto max-w-2xl text-lg text-text-muted">
+                        We provide the comprehensive tools you need to manage your fleet effortlessly and maximize your
+                        ROI.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <div
+                        class="group flex flex-col gap-4 rounded-2xl border border-[#f0f2f4] bg-white p-6 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">Automated Tracking</h3>
+                            <p class="text-text-muted">Real-time GPS integration ensures you always know where your
+                                vehicles are, giving you peace of mind 24/7.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group flex flex-col gap-4 rounded-2xl border border-[#f0f2f4] bg-white p-6 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-50 text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">payments</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">Secure Payments in ₱</h3>
+                            <p class="text-text-muted">Guaranteed payouts in PHP directly to your local bank account
+                                every week. No hidden transaction fees.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group flex flex-col gap-4 rounded-2xl border border-[#f0f2f4] bg-white p-6 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">monitoring</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">Performance Analytics</h3>
+                            <p class="text-text-muted">Comprehensive dashboard for tracking fleet utilization, earnings
+                                growth, and maintenance schedules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Timeline Section -->
+        <section class="bg-background-off-white py-16 lg:py-24">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-12 text-center">
+                    <h2 class="text-3xl font-black tracking-tight text-text-main sm:text-4xl">How It Works</h2>
+                    <p class="mt-4 text-lg text-text-muted">Start earning in three simple steps.</p>
+                </div>
+                <div class="relative grid gap-8 md:grid-cols-[1fr_auto_1fr] md:gap-0">
+                    <!-- Line connector for desktop -->
+                    <div class="absolute left-1/2 hidden h-full w-[2px] -translate-x-1/2 bg-[#dbdfe6] md:block"></div>
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center md:items-end md:pr-10 md:text-right">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">1. List Your Fleet</h3>
+                            <p class="text-text-muted">Upload vehicle details, photos, and set your own rental price per
+                                day.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center py-2 md:py-0 relative z-10">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full border-4 border-background-off-white bg-white text-primary shadow-sm">
+                            <span class="material-symbols-outlined">upload_file</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div> <!-- Spacer -->
+                    <!-- Step 2 -->
+                    <div class="hidden md:block"></div> <!-- Spacer -->
+                    <div class="flex justify-center py-2 md:py-0 relative z-10">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full border-4 border-background-off-white bg-white text-accent shadow-sm">
+                            <span class="material-symbols-outlined">verified_user</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start md:pl-10 md:text-left">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">2. Rent Securely</h3>
+                            <p class="text-text-muted">We verify every renter's identity and license so you don't have
+                                to worry.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center md:items-end md:pr-10 md:text-right">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-text-main">3. Earn Weekly</h3>
+                            <p class="text-text-muted">Receive automatic payouts to your bank account every Tuesday.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center py-2 md:py-0 relative z-10">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full border-4 border-background-off-white bg-white text-primary shadow-sm">
+                            <span class="material-symbols-outlined">account_balance_wallet</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div> <!-- Spacer -->
+                </div>
+            </div>
+        </section>
+        <!-- CTA Banner -->
+        <section class="relative bg-primary py-16 text-center text-white overflow-hidden">
+            <!-- Abstract background pattern -->
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;">
+            </div>
+            <div class="relative z-10 mx-auto max-w-3xl px-4">
+                <h2 class="text-3xl font-black tracking-tight sm:text-4xl mb-6">Ready to maximize your assets?</h2>
+                <p class="mb-8 text-lg text-blue-100">Join thousands of smart vehicle owners earning passive income
+                    today.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                        class="rounded-lg bg-white px-8 py-3 text-base font-bold text-primary shadow-lg transition-transform hover:scale-105">
+                        Start Earning Now
+                    </button>
+                    <button
+                        class="rounded-lg border border-white/30 bg-primary px-8 py-3 text-base font-bold text-white transition-colors hover:bg-white/10">
+                        Calculate ROI
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-background-light pt-12 pb-8 border-t border-[#f0f2f4]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
+                    <div class="col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="flex h-6 w-6 items-center justify-center rounded bg-primary text-white">
+                                <span class="material-symbols-outlined text-sm">directions_car</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-main">Rentify</h3>
+                        </div>
+                        <p class="max-w-xs text-sm text-text-muted leading-relaxed">
+                            The smartest way to rent and earn. We connect vehicle owners with reliable renters across
+                            the Philippines.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-sm font-bold text-text-main">Platform</h4>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Browse Cars</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Browse Motorcycles</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">How it Works</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-sm font-bold text-text-main">Company</h4>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">About Us</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Careers</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Press</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-sm font-bold text-text-main">Support</h4>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Help Center</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Owner Guide</a>
+                        <a class="text-sm text-text-muted hover:text-primary" href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div
+                    class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#f0f2f4] pt-8 sm:flex-row">
+                    <p class="text-sm text-text-muted">© 2023 Rentify Philippines. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="text-text-muted hover:text-primary" href="#">
+                            <span class="sr-only">Facebook</span>
+                            <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="text-text-muted hover:text-primary" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

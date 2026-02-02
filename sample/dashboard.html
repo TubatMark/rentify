@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>Owner Analytics Dashboard</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --deep-charcoal: #1e293b;
+        --emerald-green: #10b981;
+        --soft-bg: #f8fafc;
+        --card-bg: rgba(255, 255, 255, 0.7);
+        --glass-border: rgba(255, 255, 255, 0.5);
+      }
+      .glass-card {
+        background: var(--card-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      }
+      .glass-card:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+      }
+      body {
+        background-color: var(--soft-bg);
+        color: var(--deep-charcoal);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden font-sans text-slate-900">
+        <div class="layout-container flex h-full grow flex-col md:flex-row">
+            <div class="hidden w-72 flex-col border-r border-slate-100 bg-white md:flex">
+                <div class="flex h-full min-h-[700px] flex-col justify-between p-6">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-center gap-4 px-2">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12 shadow-sm ring-2 ring-white"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB52U6vPy-wMKNStO27P0TLembrLh4xjpKW96BclbmxhIB3AiBwJERz_yZl0uIFjgeABVHuQbZKVaLKHT4K-9xCaDmy0qep5ZozuX2X2rilAFqO_1ZGjKZNBhvSMpnH2dqfh2pGleRMXim1VNMV43LID_dh6Fn2HfgFD8jOv3fps6RbI1rN5i8ipPR4WM62XKet54JpwXTlklGAmGp_5ehKPrfGNgfCqeVTMBJfn7pBtF_M8LuoL6PF5KkhCEQMGDePUoBz0YVhRQo");'>
+                            </div>
+                            <div class="flex flex-col">
+                                <h1 class="text-slate-900 text-base font-bold leading-tight">Sophia Reyes</h1>
+                                <p class="text-slate-500 text-sm font-medium">Owner</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div
+                                class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-100 text-slate-900 shadow-sm">
+                                <span class="material-symbols-outlined text-[20px]">dashboard</span>
+                                <p class="text-sm font-semibold">Dashboard</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[20px]">directions_car</span>
+                                <p class="text-sm font-medium">Vehicles</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+                                <p class="text-sm font-medium">Bookings</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[20px]">payments</span>
+                                <p class="text-sm font-medium">Payments</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[20px]">settings</span>
+                                <p class="text-sm font-medium">Settings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col bg-[#f8fafc] px-6 py-8 md:px-10">
+                <div class="mx-auto flex w-full max-w-6xl flex-col gap-8">
+                    <div class="flex items-end justify-between">
+                        <div>
+                            <p class="text-slate-500 text-sm font-medium uppercase tracking-wide">Overview</p>
+                            <h2 class="text-slate-900 text-3xl font-bold tracking-tight">Dashboard</h2>
+                        </div>
+                        <div class="hidden sm:block">
+                            <button
+                                class="flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm ring-1 ring-slate-900/5 hover:bg-slate-50">
+                                <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+                                <span>Last 30 Days</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="glass-card flex flex-col gap-4 rounded-2xl p-6 bg-white">
+                            <div class="flex items-center justify-between">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+                                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                                </div>
+                                <span
+                                    class="flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700">
+                                    <span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                    15%
+                                </span>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-sm font-medium">Total Earnings</p>
+                                <p class="text-slate-900 text-2xl font-bold tracking-tight">₱ 125,450</p>
+                            </div>
+                        </div>
+                        <div class="glass-card flex flex-col gap-4 rounded-2xl p-6 bg-white">
+                            <div class="flex items-center justify-between">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                                    <span class="material-symbols-outlined">key</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-sm font-medium">Active Rentals</p>
+                                <p class="text-slate-900 text-2xl font-bold tracking-tight">12</p>
+                            </div>
+                        </div>
+                        <div class="glass-card flex flex-col gap-4 rounded-2xl p-6 bg-white">
+                            <div class="flex items-center justify-between">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-full bg-orange-50 text-orange-600">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-sm font-medium">Total Vehicles</p>
+                                <p class="text-slate-900 text-2xl font-bold tracking-tight">5</p>
+                            </div>
+                        </div>
+                        <div class="glass-card flex flex-col gap-4 rounded-2xl p-6 bg-white">
+                            <div class="flex items-center justify-between">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-full bg-teal-50 text-teal-600">
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 text-sm font-medium">Completed Rentals</p>
+                                <p class="text-slate-900 text-2xl font-bold tracking-tight">35</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+                        <div class="glass-card flex flex-col rounded-2xl bg-white p-6 lg:col-span-2">
+                            <div class="mb-6 flex items-start justify-between">
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-900">Earnings over time</h3>
+                                    <div class="mt-1 flex items-baseline gap-2">
+                                        <span class="text-2xl font-bold text-slate-900">₱ 125,450</span>
+                                        <span class="text-sm font-medium text-emerald-600">+15% vs last month</span>
+                                    </div>
+                                </div>
+                                <button class="text-slate-400 hover:text-slate-600">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </button>
+                            </div>
+                            <div class="relative w-full h-64">
+                                <svg class="overflow-visible" height="100%" preserveAspectRatio="none"
+                                    viewBox="0 0 800 300" width="100%">
+                                    <defs>
+                                        <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.2"></stop>
+                                            <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <line stroke="#f1f5f9" stroke-width="1" x1="0" x2="800" y1="250" y2="250"></line>
+                                    <line stroke="#f1f5f9" stroke-width="1" x1="0" x2="800" y1="190" y2="190"></line>
+                                    <line stroke="#f1f5f9" stroke-width="1" x1="0" x2="800" y1="130" y2="130"></line>
+                                    <line stroke="#f1f5f9" stroke-width="1" x1="0" x2="800" y1="70" y2="70"></line>
+                                    <path
+                                        d="M0,220 C100,220 150,150 200,160 C250,170 300,200 350,180 C400,160 450,80 500,100 C550,120 600,150 650,130 C700,110 750,50 800,80 V300 H0 Z"
+                                        fill="url(#chartGradient)"></path>
+                                    <path
+                                        d="M0,220 C100,220 150,150 200,160 C250,170 300,200 350,180 C400,160 450,80 500,100 C550,120 600,150 650,130 C700,110 750,50 800,80"
+                                        fill="none" stroke="#4f46e5" stroke-linecap="round" stroke-width="3"></path>
+                                </svg>
+                                <div class="mt-4 flex justify-between text-xs font-medium text-slate-400">
+                                    <span>Jul</span>
+                                    <span>Aug</span>
+                                    <span>Sep</span>
+                                    <span>Oct</span>
+                                    <span>Nov</span>
+                                    <span>Dec</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card flex flex-col rounded-2xl bg-white p-6">
+                            <div class="mb-6">
+                                <h3 class="text-lg font-bold text-slate-900">Most Rented</h3>
+                                <p class="text-sm text-slate-500">Top performing vehicles this month</p>
+                            </div>
+                            <div class="flex flex-1 flex-col justify-center gap-5">
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between text-sm font-semibold text-slate-700">
+                                        <span>Toyota Vios</span>
+                                        <span class="text-slate-900">18 trips</span>
+                                    </div>
+                                    <div class="h-2.5 w-full rounded-full bg-slate-100">
+                                        <div class="h-2.5 rounded-full bg-indigo-500" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between text-sm font-semibold text-slate-700">
+                                        <span>Honda Civic</span>
+                                        <span class="text-slate-900">12 trips</span>
+                                    </div>
+                                    <div class="h-2.5 w-full rounded-full bg-slate-100">
+                                        <div class="h-2.5 rounded-full bg-indigo-400" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between text-sm font-semibold text-slate-700">
+                                        <span>Mitsubishi Mirage</span>
+                                        <span class="text-slate-900">9 trips</span>
+                                    </div>
+                                    <div class="h-2.5 w-full rounded-full bg-slate-100">
+                                        <div class="h-2.5 rounded-full bg-indigo-300" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between text-sm font-semibold text-slate-700">
+                                        <span>Nissan Almera</span>
+                                        <span class="text-slate-900">6 trips</span>
+                                    </div>
+                                    <div class="h-2.5 w-full rounded-full bg-slate-100">
+                                        <div class="h-2.5 rounded-full bg-indigo-200" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="px-2 text-lg font-bold text-slate-900">Recent Activity</h3>
+                        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+                            <div
+                                class="group flex items-center gap-4 border-b border-slate-100 p-4 transition hover:bg-slate-50">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-600">
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                </div>
+                                <div class="flex flex-1 flex-col justify-center">
+                                    <p class="text-sm font-semibold text-slate-900">Booking Completed</p>
+                                    <p class="text-xs text-slate-500">Toyota Vios • Returned by John Doe</p>
+                                </div>
+                                <p class="text-xs font-medium text-slate-400">Dec 15</p>
+                            </div>
+                            <div
+                                class="group flex items-center gap-4 border-b border-slate-100 p-4 transition hover:bg-slate-50">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                                    <span class="material-symbols-outlined">add_circle</span>
+                                </div>
+                                <div class="flex flex-1 flex-col justify-center">
+                                    <p class="text-sm font-semibold text-slate-900">New Vehicle Added</p>
+                                    <p class="text-xs text-slate-500">Ford Territory Titanium</p>
+                                </div>
+                                <p class="text-xs font-medium text-slate-400">Dec 12</p>
+                            </div>
+                            <div
+                                class="group flex items-center gap-4 border-b border-slate-100 p-4 transition hover:bg-slate-50">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
+                                    <span class="material-symbols-outlined">payments</span>
+                                </div>
+                                <div class="flex flex-1 flex-col justify-center">
+                                    <p class="text-sm font-semibold text-slate-900">Payment Received</p>
+                                    <p class="text-xs text-slate-500">Payout #8492 processed to wallet</p>
+                                </div>
+                                <p class="text-xs font-medium text-slate-400">Dec 10</p>
+                            </div>
+                            <div class="group flex items-center gap-4 p-4 transition hover:bg-slate-50">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-600">
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                </div>
+                                <div class="flex flex-1 flex-col justify-center">
+                                    <p class="text-sm font-semibold text-slate-900">Booking Completed</p>
+                                    <p class="text-xs text-slate-500">Honda Civic • Returned by Sarah L.</p>
+                                </div>
+                                <p class="text-xs font-medium text-slate-400">Dec 05</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

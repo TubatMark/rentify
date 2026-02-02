@@ -1,0 +1,350 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>Visual Vehicle Management</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden"
+        style='font-family: Inter, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col w-80">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex gap-3">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkizh5vroPFCK4aOXU7563V0c0inCLDg98lor0u9qiTBkvGfRy92AuWHEE49VWGwbdBSQd5P-fw1euvdoCbueCeTYmsY4vRDh89Uwy5JzbMJZmC7SVf2H10Zpqj0WxYDa46yrsdPH_c36vpgc_W6OPhrShev6zv1mrF1kg7lNvHok5zddf8ubqcSLJQQTZK_xzKKZEx3lp5ZCIUZ1w6ir6gcssUGu2EvNqNlVTxi5zN9f4yVxdJOP2otXcQ5_BnG6HZuyWxX7ZjOg");'>
+                                </div>
+                                <h1 class="text-[#111318] text-base font-medium leading-normal">Rentify</h1>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div
+                                    class="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-slate-50 rounded-lg">
+                                    <span class="material-symbols-outlined text-[#111318]"
+                                        style="font-size: 24px;">dashboard</span>
+                                    <p class="text-[#111318] text-sm font-medium leading-normal">Dashboard</p>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-slate-50 rounded-lg">
+                                    <span class="material-symbols-outlined text-[#111318]"
+                                        style="font-size: 24px;">calendar_month</span>
+                                    <p class="text-[#111318] text-sm font-medium leading-normal">Bookings</p>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#f0f2f4] cursor-pointer">
+                                    <span class="material-symbols-outlined text-[#111318] fill-1"
+                                        style="font-size: 24px;">directions_car</span>
+                                    <p class="text-[#111318] text-sm font-medium leading-normal">Vehicles</p>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-slate-50 rounded-lg">
+                                    <span class="material-symbols-outlined text-[#111318]"
+                                        style="font-size: 24px;">star</span>
+                                    <p class="text-[#111318] text-sm font-medium leading-normal">Reviews</p>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-slate-50 rounded-lg">
+                                    <span class="material-symbols-outlined text-[#111318]"
+                                        style="font-size: 24px;">person</span>
+                                    <p class="text-[#111318] text-sm font-medium leading-normal">Profile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-col gap-6 p-4">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <h2 class="text-[#111318] tracking-tight text-[32px] font-bold leading-tight">Vehicles</h2>
+                            <button
+                                class="flex min-w-[140px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full h-12 px-6 bg-[#111318] text-white text-base font-medium leading-normal hover:bg-[#2b303b] transition-colors shadow-lg">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">add</span>
+                                <span class="truncate">Add Vehicle</span>
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <span class="material-symbols-outlined text-[#616f89]"
+                                        style="font-size: 20px;">search</span>
+                                </div>
+                                <input
+                                    class="block w-full rounded-xl border-none bg-[#f0f2f4] py-3 pl-10 pr-4 text-[#111318] placeholder-[#616f89] focus:ring-2 focus:ring-[#111318] focus:bg-white transition-all text-sm"
+                                    placeholder="Search by vehicle name, type, or plate number..." type="text" />
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#111318] text-white text-sm font-medium transition-colors">
+                                    All
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#f0f2f4] text-[#111318] text-sm font-medium hover:bg-[#e0e2e4] transition-colors">
+                                    Cars
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#f0f2f4] text-[#111318] text-sm font-medium hover:bg-[#e0e2e4] transition-colors">
+                                    Motorcycles
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#f0f2f4] text-[#111318] text-sm font-medium hover:bg-[#e0e2e4] transition-colors">
+                                    Available
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#f0f2f4] text-[#111318] text-sm font-medium hover:bg-[#e0e2e4] transition-colors">
+                                    Rented
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center h-8 px-4 rounded-full bg-[#f0f2f4] text-[#111318] text-sm font-medium hover:bg-[#e0e2e4] transition-colors">
+                                    Maintenance
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl border border-[#dbdfe6] bg-white shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative aspect-video w-full bg-[#f0f2f4]">
+                                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfPTKcrMqGeK1D2qhZWKiUeZWBM7pzuOvKb0pJY2_rASdWNedgbHLC6LlIpQDSaKmQRqoC4Tv7pGHrPQC4WFqU_XVoPML2urx4XwzSBTw0olv732SKL6WTsvNRxoKRzpLQ7rw5uQnorHEl4xJuiP4QxTs88UAIZ4Fs_iic-nM6xMuxNACiKBIxLzv7cbol5AmXXfJTjPBOVwJINUUoDSgmrEL6Ht6DpMHX4lXfAnPT16kK8b95UQK2NyhROQz--M9Pv2KaRhxyx5g");'>
+                                    </div>
+                                    <div class="absolute top-3 right-3">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-emerald-700 backdrop-blur-sm shadow-sm border border-emerald-100">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                                            Available
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3 p-4">
+                                    <div>
+                                        <h3 class="text-[#111318] text-lg font-bold leading-tight">Toyota Vios</h3>
+                                        <p class="text-[#616f89] text-sm">Car • Sedan</p>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-[#f0f2f4] pt-3 mt-1">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">payments</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Daily
+                                                    Rate</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">₱1,500</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1 items-end">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">timeline</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Total
+                                                    Trips</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">25</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 mt-2">
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">Edit</button>
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl border border-[#dbdfe6] bg-white shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative aspect-video w-full bg-[#f0f2f4]">
+                                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbGZaddekI2E8-jvDDtw3Fim_iYg2TKFhVvcqj9onqHdKnCIJ08ZoUAu1p6CuDQUBMqJJbWCrAfJdwqvz5UVMYONPhfnHBbW03au-ZNNvTgBtvrtQgmSHNy9PewPvRK4uxvQywSZBsx36TvE1d-s5sz0cQCRtlOKT7jL-xMQ1cjqUzNwjYkIm3zx8FHzeGd2VlkFONSNBxSPBmT4j9o31g2umSfAX7LPEFXVd1hdGAqw31JgILYxHkscBz9MxGIUloc8NTsbDzXaU");'>
+                                    </div>
+                                    <div class="absolute top-3 right-3">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-amber-700 backdrop-blur-sm shadow-sm border border-amber-100">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
+                                            Rented
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3 p-4">
+                                    <div>
+                                        <h3 class="text-[#111318] text-lg font-bold leading-tight">Yamaha NMAX</h3>
+                                        <p class="text-[#616f89] text-sm">Motorcycle • Scooter</p>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-[#f0f2f4] pt-3 mt-1">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">payments</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Daily
+                                                    Rate</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">₱800</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1 items-end">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">timeline</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Total
+                                                    Trips</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">18</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 mt-2">
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">Edit</button>
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl border border-[#dbdfe6] bg-white shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative aspect-video w-full bg-[#f0f2f4]">
+                                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRr_lTVDzALUDH1lugQuT14Sw8KS4icY5Vi2z66TkkVDD7uBLoNyc5YkMQckW6Zh52KAtvIRHvctjw1WCTRqbM1RZyK7ApehXYOH-yPkEK-nRcpA3GJK6tx1DAS-ymPD_Kx8rIAi5QmJlAYKpMSTPgtC2xlNJlmRu90AnVvVrTHJwy2oHP4spOnvqUBHb44ELaWa9ZfiOvNWAH7ckVbmiFsUQBvdX-E7vLpqsZUuZ2QFgubcvCv2DKeZjduy70Mkg3vdzLUI_MrFE");'>
+                                    </div>
+                                    <div class="absolute top-3 right-3">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-rose-700 backdrop-blur-sm shadow-sm border border-rose-100">
+                                            <span class="material-symbols-outlined text-sm">build</span>
+                                            Maintenance
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3 p-4">
+                                    <div>
+                                        <h3 class="text-[#111318] text-lg font-bold leading-tight">Honda Civic</h3>
+                                        <p class="text-[#616f89] text-sm">Car • Sedan</p>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-[#f0f2f4] pt-3 mt-1">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">payments</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Daily
+                                                    Rate</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">₱1,800</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1 items-end">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">timeline</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Total
+                                                    Trips</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">12</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 mt-2">
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">Edit</button>
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl border border-[#dbdfe6] bg-white shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative aspect-video w-full bg-[#f0f2f4]">
+                                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6aejXTGmC9Ff37TxSPC48t2JUtXTyMj_8hPhT3eNAwfTuqTPuf-jyEjAdqkNiqmlW5gyQLPA2FW5tnheneVUwGbuDWa_B9SPCyQ6qrw8TD7gi07mRMaa4W6CzlaOogvZvh3fJOcNQzFrDVBaf-5AWUN4tdOHr7t67fgIAw_O2-HMqG5dJdM_ML1PuFUsDevUgtJF7oGWMeh_icxJFLs1fKrfmfNot3LUpe595UBZzFIeZomnHmnboZC3lBct09kf-g4tKZxP566Q");'>
+                                    </div>
+                                    <div class="absolute top-3 right-3">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-emerald-700 backdrop-blur-sm shadow-sm border border-emerald-100">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                                            Available
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3 p-4">
+                                    <div>
+                                        <h3 class="text-[#111318] text-lg font-bold leading-tight">Honda Click</h3>
+                                        <p class="text-[#616f89] text-sm">Motorcycle • Scooter</p>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-[#f0f2f4] pt-3 mt-1">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">payments</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Daily
+                                                    Rate</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">₱700</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1 items-end">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">timeline</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Total
+                                                    Trips</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">30</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 mt-2">
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">Edit</button>
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl border border-[#dbdfe6] bg-white shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative aspect-video w-full bg-[#f0f2f4]">
+                                    <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBv3Pu9soOATMh49Blj4zBbJwa-CqTkM16lx5JCozxUrdVvx-3yuF-9xTCkFqgZC1LxzpvQCOw58C4yo4YvJYL_eynutE9KI-gyjzFrTH8GBgzsUQpoHcXzDVv8_8DDqjv4hmxbry4YMOa0tgDoSdpjyjT6W-QNrjHcyYFARFKQQFizl0bHYKqGZAlqsyiJInpL7pw50RVaQKrmSqPeKrXkvfwzLwnAn7tnHid1K7XiQeDh4TbdoUXpfXeDZOf7iY--tsPmyDBwBvg");'>
+                                    </div>
+                                    <div class="absolute top-3 right-3">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-emerald-700 backdrop-blur-sm shadow-sm border border-emerald-100">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                                            Available
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3 p-4">
+                                    <div>
+                                        <h3 class="text-[#111318] text-lg font-bold leading-tight">Mitsubishi Mirage
+                                        </h3>
+                                        <p class="text-[#616f89] text-sm">Car • Hatchback</p>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-[#f0f2f4] pt-3 mt-1">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">payments</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Daily
+                                                    Rate</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">₱1,200</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1 items-end">
+                                            <div class="flex items-center gap-1.5 text-[#616f89]">
+                                                <span class="material-symbols-outlined text-lg">timeline</span>
+                                                <span class="text-xs font-medium uppercase tracking-wide">Total
+                                                    Trips</span>
+                                            </div>
+                                            <p class="text-[#111318] font-semibold">22</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 mt-2">
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">Edit</button>
+                                        <button
+                                            class="flex-1 rounded-lg bg-[#f0f2f4] px-3 py-2 text-sm font-medium text-[#111318] hover:bg-[#e0e2e4] transition-colors">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

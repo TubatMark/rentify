@@ -1,0 +1,9 @@
+
+.env.local
+.opencode
+.sample
+.node_modules
+.convex
+.swc
+.next
+.DS_Store
