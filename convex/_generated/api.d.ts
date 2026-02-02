@@ -11,6 +11,7 @@
 import type * as activities from "../activities.js";
 import type * as bookings from "../bookings.js";
 import type * as dashboard from "../dashboard.js";
+import type * as users from "../users.js";
 import type * as vehicles from "../vehicles.js";
 
 import type {
@@ -23,6 +24,7 @@ declare const fullApi: ApiFromModules<{
   activities: typeof activities;
   bookings: typeof bookings;
   dashboard: typeof dashboard;
+  users: typeof users;
   vehicles: typeof vehicles;
 }>;
 

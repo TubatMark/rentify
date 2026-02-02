@@ -26,6 +26,25 @@ export const add = mutation({
   },
 });
 
+// Update vehicle details
+export const update = mutation({
+  args: {
+    id: v.id("vehicles"),
+    name: v.optional(v.string()),
+    model: v.optional(v.string()),
+    type: v.optional(v.string()),
+    pricePerDay: v.optional(v.number()),
+    status: v.optional(v.string()),
+    plateNumber: v.optional(v.string()),
+    capacity: v.optional(v.number()),
+    image: v.optional(v.string()),
+  },
+  handler: async (ctx: any, args: any) => {
+    const { id, ...updates } = args;
+    await ctx.db.patch(id, updates);
+  },
+});
+
 // Update vehicle status
 export const updateStatus = mutation({
   args: {
@@ -34,5 +53,15 @@ export const updateStatus = mutation({
   },
   handler: async (ctx: any, args: any) => {
     await ctx.db.patch(args.id, { status: args.status });
+  },
+});
+
+// Delete a vehicle
+export const remove = mutation({
+  args: {
+    id: v.id("vehicles"),
+  },
+  handler: async (ctx: any, args: any) => {
+    await ctx.db.delete(args.id);
   },
 });

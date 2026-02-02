@@ -4,20 +4,31 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Car, Mail, Lock, ArrowRight, Eye, EyeOff, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
+import Alert from "@/components/ui/Alert";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [alert, setAlert] = useState<{ isVisible: boolean; type: "success" | "error"; message: string }>({ isVisible: false, type: "success", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     // Simulate login
-    setTimeout(() => (window.location.href = "/dashboard"), 1500);
+    setTimeout(() => {
+      setAlert({ isVisible: true, type: "success", message: "Login Successful" });
+      setTimeout(() => (window.location.href = "/dashboard"), 1500);
+    }, 1500);
   };
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
+      <Alert 
+        isVisible={alert.isVisible} 
+        type={alert.type} 
+        message={alert.message} 
+        onClose={() => setAlert({ ...alert, isVisible: false })} 
+      />
       {/* Left Side: Branding & Visuals */}
       <div className="hidden lg:flex flex-col justify-between p-12 bg-slate-900 relative overflow-hidden text-white">
         <div className="relative z-10">
